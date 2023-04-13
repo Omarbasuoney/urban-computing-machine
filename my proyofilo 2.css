@@ -1,0 +1,408 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    
+}
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color:#323946;
+    --text-bg-color:#fff;
+    --main-color:#0ef;
+
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-bg-color);
+}
+
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 2rem 9%;
+    width: 100%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color:var(--text-bg-color);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    
+}
+
+.header  span{
+    color: #0ef;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color:var(--text-bg-color);
+    text-decoration: none;
+    font-weight: 500 ;
+    margin-left:35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+  .navbar a.Active{
+   color:var(--main-color);
+ } 
+
+ .Home-img img{
+    max-width: 700px;
+    margin-right: -20px ;
+}
+
+.Home{
+   position: relative;
+   width:100% ;
+   height: 100vh;
+   display:flex ; 
+   justify-content:space-between ;
+   align-items:center ;
+   padding: 70px 5% 0;
+}
+
+.Home-contant{
+    max-width: 600px;
+}
+
+.Home-contant h3{
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.Home-contant h3 span{
+    color: #0ef;
+}
+
+.Home-contant h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+
+
+.Home p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.social-media a {
+    display:inline-flex ;
+    justify-content:center ;
+    align-items: center;
+    width:40px ;
+    height:40px ;
+    background:transparent ;
+    border:2px solid #0ef ;
+    border-radius: 50%;
+    font-size:20px ;
+    color:#0ef ;
+    text-decoration: none;
+    margin: 30px 15px 30px 0 ;
+    
+
+}
+
+.social-media a:hover{
+    background: #0ef;
+    color:#1f242d;
+    box-shadow: 0 0 20px #0ef;
+    transition: .5s;
+}
+
+.btn{
+    display: inline-block;
+    background: #0ef;
+    padding: 12px 28px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0ef;
+    text-decoration: none;
+    font-size: 16px;
+    color: #1f242d;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.About .about-img img{
+    max-width: 700px;
+    margin-right: -20px ;
+}
+
+.heading span{
+    color: #0ef;
+    font-weight: 800;
+}
+
+.About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 800px;
+
+    background: var(--second-bg-color);
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.about-content h3{
+    font-size: 1.8rem;
+}
+
+.about-content p{
+    font-size: 1.3rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.services h2{
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    
+    
+
+    
+}
+
+
+.services-container .services-box{
+  height: 400px;
+  width: 370px;
+  padding: 20px 35px;
+  background: var(--second-bg-color);
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: .5s ease;
+  
+
+
+}
+
+.services-container .services-box:hover{
+    border-color: #fff;
+    transform: scale(1.02)
+    
+}
+
+.services-box i{
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.services-box h3{
+    font-size: 2.3rem;
+}
+
+.services-box p {
+    font-size: 1.3rem;
+    margin: 1rem 0 3rem;
+}
+
+.services .heading span{
+    color: #0ef;
+}
+
+
+.heading span{
+    color: #0ef;
+}
+
+.protofilo{
+    color: #232527;
+}
+
+.protofilo h2{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.protofilo h2{
+    color: #fff;
+}
+.protofilo-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.3rem;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+}
+
+.protofilo-container .protofilo-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    border: 1px var(--main-color);
+}
+
+.protofilo-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.protofilo-box img:hover{
+    transform: scale(1.1);
+}
+
+.protofilo-box .protofilo-leyer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.protofilo-box:hover .protofilo-leyer{
+    transform: translateY(0);
+}
+
+.protofilo .protofilo-box h4{
+    color: #fff;
+}
+
+.protofilo .protofilo-box p{
+    color: #fff;
+}
+
+.protofilo-leyer h4{
+    font-size: 2.5rem;
+}
+
+.protofilo-leyer p{
+    font-size: 1.1rem;
+    margin: .3rem 0 1rem;
+}
+
+.protofilo-leyer a{
+    display:inline-flex ;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-bg-color);
+    border-radius: 50%;
+}
+
+
+.protofilo-leyer a i{
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-bg-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.footer{
+    justify-content: space-between;
+    background: var(--second-bg-color);
+    display: flex;
+    align-items: center;
+    padding: 2rem 9%;
+    flex-wrap: wrap;
+}
+
+.footer-text{
+    font-size: 1.6rem;
+}
+
+.footer-icontop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-icontop a:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-icontop a i{
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
